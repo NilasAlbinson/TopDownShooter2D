@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[SerializeField] float damageColdown = 3;
 
 public class playerDamage : MonoBehaviour
 {
-    int playerHealth = 3;
+    [SerializeField] int playerHealth = 3;
+    [SerializeField] float damageColdown = 3f;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,7 +16,7 @@ public class playerDamage : MonoBehaviour
 
             if (playerHealth > 0)
             {
-                Invoke(OnCollisionEnter2D, damageColdown);
+                Invoke("OnCollisionEnter2D", damageColdown);
             }
             else if (playerHealth <= 0)
             {

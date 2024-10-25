@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4510623715019543034}
   - component: {fileID: 7351460997391506382}
   - component: {fileID: 6815755075730591865}
-  - component: {fileID: 7490099847024943298}
+  - component: {fileID: 1386330516132044526}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -165,7 +165,7 @@ PolygonCollider2D:
       - {x: 0.43359375, y: 0.25}
       - {x: 0, y: 0.5}
   m_UseDelaunayMesh: 0
---- !u!114 &7490099847024943298
+--- !u!114 &1386330516132044526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,8 +174,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1446864544129229835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b5d3c6b371b874da99f07b1acdb06e, type: 3}
+  m_Script: {fileID: 11500000, guid: 38f27ddfa5a62df46ae289c042beda80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   enemySpeed: 2
+  honingLevel: 15
+  honingDistance: 5
